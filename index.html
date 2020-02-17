@@ -12,7 +12,7 @@
 	</head>
 	<body id="bg-image">
 			
-		<div class="container-fluid">
+		<div class="container-fluid" >
 
 
 			<div id="weather">
@@ -25,8 +25,8 @@
 			</div>
 		
 			<div>
-				<form>
-					<div class="form-group" onsubmit="app/controllers/todo-controller.addTodo(e)">
+				<form onsubmit="app.todoController.addTodo(e)">
+					<div class="form-group">
 						<label for="task">Todo List</label>
 						<input name="task" type="text" class="form-control" placeholder="Add a todo...">
 					</div>

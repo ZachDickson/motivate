@@ -27,8 +27,8 @@ export default class TodoController {
       task: form.task.value
       //TODO build the todo object from the data that comes into this method
     };
-    console.log(todo)
     TodoService.addTodoAsync(todo);
+
   }
 
   //NOTE This method will pass an Id to your service for the TODO that will need to be toggled

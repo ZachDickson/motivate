@@ -10,13 +10,17 @@ const todoApi = axios.create({
 class TodoService {
   getTodos() {
     console.log("Getting the Todo List", store.State.todos);
-    todoApi.get();
+    todoApi
+      .get("")
+      .then (res=> {
+        let allTodos = res.data.data.map (t => new Todos(t))
+      })
     //TODO Handle this response from the server
   }
 
   addTodoAsync(todo) {
     todoApi
-    .put("", todo)
+    .post("", todo)
     .then(res => {
       let newTodo = new Todos(res.data.data);
       let todos = [...store.State.todos, newTodo];
