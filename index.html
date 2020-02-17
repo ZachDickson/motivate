@@ -26,13 +26,14 @@
 		
 			<div>
 				<form>
-					<div class="form-group" onsubmit="app.todo-controller.addTodo(e)">
-						<label for="todo-list">Todo List</label>
-						<input type="text" class="form-control" placeholder="Add a todo...">
+					<div class="form-group" onsubmit="app/controllers/todo-controller.addTodo(e)">
+						<label for="task">Todo List</label>
+						<input name="task" type="text" class="form-control" placeholder="Add a todo...">
 					</div>
 					<button type="submit" class="btn btn-primary">Add</button>
 				</form>
 			</div>
+			<div id="tasklist"></div>
 		
 		</div>
 		

@@ -1,10 +1,13 @@
 export default class Todos {
   constructor(data){
-    this.data = data
+    this.task = data.task
   }
 
 get todoTemplate(){
-  return
+  return /*html*/`
+  <div id="tasklist">${this.task}</div>
+
+  `
 
 }
 }
