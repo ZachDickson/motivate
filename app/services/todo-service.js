@@ -1,5 +1,5 @@
 import store from "../store.js";
-import Todos from "../models/"
+import Todos from "../models/todos"
 
 // @ts-ignore
 const todoApi = axios.create({

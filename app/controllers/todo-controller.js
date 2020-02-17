@@ -4,7 +4,7 @@ import store from "../store.js";
 //TODO Create the render function
 function _drawTodos() {
   let todos = store.State.todos;
-  let todoElem = document.getElementById("cars");
+  let todoElem = document.getElementById();
   let template = "";
 
   todos.forEach(t => {
@@ -23,6 +23,7 @@ export default class TodoController {
     e.preventDefault();
     var form = e.target;
     var todo = {
+
       //TODO build the todo object from the data that comes into this method
     };
     TodoService.addTodoAsync(todo);
